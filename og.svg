@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title>AGENTS.md Repo Readiness Checker</title>
+  <desc>Social preview for a free browser-only AGENTS.md readiness checker.</desc>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#f8fafc"/>
+  <rect x="118" y="126" width="356" height="378" rx="16" fill="#111827"/>
+  <path d="M164 178h220M164 226h260M164 274h190M164 322h250M164 370h218" stroke="#e5e7eb" stroke-width="18" stroke-linecap="round"/>
+  <path d="M420 426l54 54 102-132" fill="none" stroke="#22c55e" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="540" y="202" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">AGENTS.md Repo</text>
+  <text x="540" y="272" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Readiness Checker</text>
+  <text x="540" y="352" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="32">Paste an AGENTS.md draft.</text>
+  <text x="540" y="398" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="32">Get a local score and fix list.</text>
+  <text x="540" y="474" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">No signup. No tracking. Browser-only.</text>
+</svg>

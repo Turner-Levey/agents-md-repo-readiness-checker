@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AGENTS.md Repo Readiness Checker</title>
+    <meta
+      name="description"
+      content="Free no-signup AGENTS.md repo readiness checker. Paste an AGENTS.md draft and get a browser-only score, issue list, and fix plan for coding-agent instructions."
+    >
+    <link rel="canonical" href="https://agents-md-repo-readiness-checker.vercel.app/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="AGENTS.md Repo Readiness Checker">
+    <meta
+      property="og:description"
+      content="Paste an AGENTS.md draft and get a local readiness score for setup, commands, conventions, verification, PR guidance, and safety boundaries."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agents-md-repo-readiness-checker.vercel.app/">
+    <meta property="og:image" content="https://agents-md-repo-readiness-checker.vercel.app/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AGENTS.md Repo Readiness Checker">
+    <meta
+      name="twitter:description"
+      content="Free, no-signup, browser-only checker for AGENTS.md repo instruction drafts."
+    >
+    <meta name="twitter:image" content="https://agents-md-repo-readiness-checker.vercel.app/og.svg">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AGENTS.md Repo Readiness Checker",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "url": "https://agents-md-repo-readiness-checker.vercel.app/",
+        "codeRepository": "https://github.com/Turner-Levey/agents-md-repo-readiness-checker",
+        "license": "https://github.com/Turner-Levey/agents-md-repo-readiness-checker/blob/main/LICENSE",
+        "description": "A free no-signup browser-only checker that scores pasted AGENTS.md drafts for coding-agent repo readiness.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "AGENTS.md readiness score",
+          "Setup and command checks",
+          "Verification and PR guidance checks",
+          "Safety boundary checks",
+          "Copyable Markdown report"
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/" aria-label="AGENTS.md Repo Readiness Checker home">
+          <span class="brand__mark">A</span>
+          <span>AGENTS.md Readiness</span>
+        </a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="#checker">Checker</a>
+          <a href="#rubric">Rubric</a>
+          <a href="https://github.com/Turner-Levey/agents-md-repo-readiness-checker">Source</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro__copy">
+          <p class="eyebrow">Free browser-only developer tool</p>
+          <h1>AGENTS.md Repo Readiness Checker</h1>
+          <p class="intro__lede">
+            Paste an AGENTS.md draft and get a practical score for whether it gives coding agents enough repo context to work safely.
+          </p>
+          <div class="intro__actions">
+            <a class="button button--primary" href="#checker">Open checker</a>
+            <a class="button" href="#rubric">View rubric</a>
+          </div>
+        </div>
+        <div class="intro__panel" aria-label="Readiness score preview">
+          <div class="score-preview">
+            <span class="score-preview__number">87</span>
+            <span class="score-preview__label">ready</span>
+          </div>
+          <div class="preview-bars" aria-hidden="true">
+            <span style="--value: 92%"></span>
+            <span style="--value: 78%"></span>
+            <span style="--value: 84%"></span>
+            <span style="--value: 63%"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="checker" class="checker" aria-labelledby="checker-title">
+        <div class="checker__input">
+          <div class="section-heading">
+            <p class="eyebrow">Paste AGENTS.md</p>
+            <h2 id="checker-title">Check repository instructions</h2>
+          </div>
+          <label for="agents-input">AGENTS.md content</label>
+          <textarea
+            id="agents-input"
+            spellcheck="false"
+            placeholder="# AGENTS.md&#10;&#10;## Dev environment tips&#10;- Use pnpm install.&#10;&#10;## Testing instructions&#10;- Run pnpm test before committing."
+          ></textarea>
+          <div class="control-row">
+            <button id="analyze-button" class="button button--primary" type="button">Analyze</button>
+            <button id="sample-button" class="button" type="button">Use sample</button>
+            <button id="clear-button" class="button" type="button">Clear</button>
+          </div>
+          <p class="privacy-note">The checker runs entirely in this page. Pasted text is not uploaded or stored.</p>
+        </div>
+
+        <div class="checker__results" aria-live="polite">
+          <div class="result-card result-card--score">
+            <span class="result-label">Readiness score</span>
+            <div class="score-line">
+              <strong id="score-value">0</strong>
+              <span id="score-status">paste a draft</span>
+            </div>
+            <div class="meter" aria-hidden="true">
+              <span id="score-meter"></span>
+            </div>
+          </div>
+
+          <div class="result-grid" id="result-grid"></div>
+
+          <div class="result-card">
+            <div class="result-card__header">
+              <h3>Fix plan</h3>
+              <div class="result-actions">
+                <button id="copy-report" class="button button--small" type="button">Copy</button>
+                <button id="download-report" class="button button--small" type="button">Download</button>
+              </div>
+            </div>
+            <ol id="fix-list" class="fix-list"></ol>
+            <pre id="report-output" tabindex="0"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="rubric" class="rubric" aria-labelledby="rubric-title">
+        <div class="section-heading">
+          <p class="eyebrow">What gets checked</p>
+          <h2 id="rubric-title">The readiness rubric</h2>
+        </div>
+        <div class="rubric-grid">
+          <article>
+            <h3>Setup</h3>
+            <p>Install commands, environment notes, package manager, and local service expectations.</p>
+          </article>
+          <article>
+            <h3>Commands</h3>
+            <p>Exact test, lint, type-check, and build commands that an agent can run without guessing.</p>
+          </article>
+          <article>
+            <h3>Repo map</h3>
+            <p>Key folders, ownership boundaries, generated files, and monorepo scope notes.</p>
+          </article>
+          <article>
+            <h3>Safety</h3>
+            <p>Secrets, migrations, destructive commands, generated artifacts, and production boundaries.</p>
+          </article>
+          <article>
+            <h3>Review</h3>
+            <p>PR format, verification standard, tests to add, and known risks before merge.</p>
+          </article>
+          <article>
+            <h3>Maintenance</h3>
+            <p>Update cues so AGENTS.md changes when architecture, scripts, or workflow changes.</p>
+          </article>
+        </div>
+        <p class="source-note">
+          Reference links:
+          <a href="https://github.com/openai/agents.md">AGENTS.md format</a>
+          and
+          <a href="https://developers.openai.com/codex/guides/agents-md">Codex AGENTS.md guide</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>No signup. No tracking. MIT source.</span>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="https://github.com/Turner-Levey/agents-md-repo-readiness-checker">GitHub</a>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>

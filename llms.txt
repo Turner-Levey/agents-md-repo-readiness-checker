@@ -1,0 +1,24 @@
+# AGENTS.md Repo Readiness Checker
+
+URL: https://agents-md-repo-readiness-checker.vercel.app/
+Source: https://github.com/Turner-Levey/agents-md-repo-readiness-checker
+License: MIT
+
+## What it does
+
+AGENTS.md Repo Readiness Checker is a free, no-signup, browser-only checklist tool for pasted AGENTS.md drafts. It scores whether a repository instruction file gives coding agents enough context to work safely: setup, exact commands, project map, conventions, verification, PR guidance, boundaries, and maintenance cues.
+
+## Privacy posture
+
+The checker runs locally in the browser. It does not send pasted Markdown anywhere, does not require login, does not use analytics scripts, and does not use browser storage.
+
+## Useful routes
+
+- Home and checker: https://agents-md-repo-readiness-checker.vercel.app/
+- Sitemap: https://agents-md-repo-readiness-checker.vercel.app/sitemap.xml
+- Robots: https://agents-md-repo-readiness-checker.vercel.app/robots.txt
+
+## Source references
+
+- AGENTS.md format: https://github.com/openai/agents.md
+- Codex AGENTS.md guide: https://developers.openai.com/codex/guides/agents-md
