@@ -6,6 +6,7 @@ Live URL: https://agents-md-repo-readiness-checker.vercel.app/
 Tiny Tool Town listing: https://www.tinytooltown.com/tools/agents-md-repo-readiness-checker/
 No-Login pending listing: https://nologin.tools/tool/agents-md-repo-readiness-checker-vercel-app/
 No-Login badge status: https://nologin.tools/badge/agents-md-repo-readiness-checker-vercel-app/
+Dogfooded AGENTS.md example: https://agents-md-repo-readiness-checker.vercel.app/AGENTS.md
 
 ## What it checks
 
@@ -34,6 +35,7 @@ The checker runs entirely in the browser. It does not upload pasted text, does n
 
 - AGENTS.md format: https://github.com/openai/agents.md
 - Codex AGENTS.md guide: https://developers.openai.com/codex/guides/agents-md
+- This repo's AGENTS.md example: https://agents-md-repo-readiness-checker.vercel.app/AGENTS.md
 
 ## Local check
 
