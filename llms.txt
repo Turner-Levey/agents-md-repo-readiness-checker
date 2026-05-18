@@ -2,6 +2,9 @@
 
 URL: https://agents-md-repo-readiness-checker.vercel.app/
 Source: https://github.com/Turner-Levey/agents-md-repo-readiness-checker
+Tiny Tool Town listing: https://www.tinytooltown.com/tools/agents-md-repo-readiness-checker/
+No-Login pending listing: https://nologin.tools/tool/agents-md-repo-readiness-checker-vercel-app/
+No-Login badge status: https://nologin.tools/badge/agents-md-repo-readiness-checker-vercel-app/
 License: MIT
 
 ## What it does
@@ -17,6 +20,9 @@ The checker runs locally in the browser. It does not send pasted Markdown anywhe
 - Home and checker: https://agents-md-repo-readiness-checker.vercel.app/
 - Sitemap: https://agents-md-repo-readiness-checker.vercel.app/sitemap.xml
 - Robots: https://agents-md-repo-readiness-checker.vercel.app/robots.txt
+- Tiny Tool Town listing: https://www.tinytooltown.com/tools/agents-md-repo-readiness-checker/
+- No-Login pending listing: https://nologin.tools/tool/agents-md-repo-readiness-checker-vercel-app/
+- No-Login pending-verification badge: https://nologin.tools/badge/agents-md-repo-readiness-checker-vercel-app/
 
 ## Source references
 
