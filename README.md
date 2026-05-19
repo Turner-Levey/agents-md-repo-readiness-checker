@@ -6,6 +6,7 @@ Live URL: https://agents-md-repo-readiness-checker.vercel.app/
 Tiny Tool Town listing: https://www.tinytooltown.com/tools/agents-md-repo-readiness-checker/
 No-Login pending listing: https://nologin.tools/tool/agents-md-repo-readiness-checker-vercel-app/
 No-Login badge status: https://nologin.tools/badge/agents-md-repo-readiness-checker-vercel-app/
+AI-ready repo checklist: https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html
 Dogfooded AGENTS.md example: https://agents-md-repo-readiness-checker.vercel.app/AGENTS.md
 
 ## What it checks
@@ -30,6 +31,10 @@ The checker runs entirely in the browser. It does not upload pasted text, does n
 - Tiny Tool Town listing is public.
 - No-Login route is public and pending review.
 - No-Login badge route is public and pending verification.
+
+## Search intent route
+
+- `is-my-code-repo-ai-ready.html` covers the broader AI-ready repository checklist intent and routes users back to the local AGENTS.md checker.
 
 ## References
 

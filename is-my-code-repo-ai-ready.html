@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Is My Code Repo AI Ready?</title>
+    <meta
+      name="description"
+      content="A practical AI-ready repo checklist for AGENTS.md, exact commands, repo maps, safety boundaries, and verification notes. Includes a free browser-only checker."
+    >
+    <link rel="canonical" href="https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Is My Code Repo AI Ready?">
+    <meta
+      property="og:description"
+      content="Check whether a repository gives coding agents enough setup, command, map, safety, and verification context to work safely."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html">
+    <meta property="og:image" content="https://agents-md-repo-readiness-checker.vercel.app/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Is My Code Repo AI Ready?">
+    <meta
+      name="twitter:description"
+      content="A concise AI-ready repo checklist plus a local AGENTS.md readiness checker."
+    >
+    <meta name="twitter:image" content="https://agents-md-repo-readiness-checker.vercel.app/og.svg">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Is My Code Repo AI Ready?",
+        "description": "A practical checklist for making a repository legible to coding agents with AGENTS.md, exact commands, repo maps, safety boundaries, and verification notes.",
+        "author": {
+          "@type": "Person",
+          "name": "Turner Levey"
+        },
+        "datePublished": "2026-05-19",
+        "dateModified": "2026-05-19",
+        "mainEntityOfPage": "https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html",
+        "isPartOf": {
+          "@type": "SoftwareApplication",
+          "name": "AGENTS.md Repo Readiness Checker",
+          "url": "https://agents-md-repo-readiness-checker.vercel.app/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/" aria-label="AGENTS.md Repo Readiness Checker home">
+          <span class="brand__mark">A</span>
+          <span>AGENTS.md Readiness</span>
+        </a>
+        <nav class="top-nav" aria-label="Primary">
+          <a href="/">Checker</a>
+          <a href="/#rubric">Rubric</a>
+          <a href="/AGENTS.md">AGENTS.md</a>
+          <a href="https://github.com/Turner-Levey/agents-md-repo-readiness-checker">Source</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="guide">
+        <p class="eyebrow">AI agent readiness</p>
+        <h1>Is my code repo AI ready?</h1>
+        <p class="guide__lede">
+          A repo is AI ready when a coding agent can find the commands, boundaries, and verification standard without guessing.
+          The fastest check is the instruction surface the agent reads first: `AGENTS.md`.
+        </p>
+
+        <div class="guide-actions">
+          <a class="button button--primary" href="/#checker">Run the checker</a>
+          <a class="button" href="/AGENTS.md">View example AGENTS.md</a>
+        </div>
+
+        <section aria-labelledby="quick-check-title">
+          <h2 id="quick-check-title">Quick repo-readiness check</h2>
+          <div class="checklist-table" role="table" aria-label="AI-ready repository checklist">
+            <div role="row">
+              <strong role="cell">Setup</strong>
+              <span role="cell">Install command, environment file, package manager, and local services are named.</span>
+            </div>
+            <div role="row">
+              <strong role="cell">Commands</strong>
+              <span role="cell">Test, lint, type-check, and build commands are exact enough to copy and run.</span>
+            </div>
+            <div role="row">
+              <strong role="cell">Repo map</strong>
+              <span role="cell">Important folders, generated files, ownership boundaries, and monorepo scopes are explicit.</span>
+            </div>
+            <div role="row">
+              <strong role="cell">Safety</strong>
+              <span role="cell">Secrets, production data, migrations, destructive commands, and approval rules are visible.</span>
+            </div>
+            <div role="row">
+              <strong role="cell">Review</strong>
+              <span role="cell">PR summary, verification evidence, screenshots, and test expectations are stated.</span>
+            </div>
+            <div role="row">
+              <strong role="cell">Maintenance</strong>
+              <span role="cell">The file says when to update instructions as scripts, architecture, and workflows change.</span>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="agents-title">
+          <h2 id="agents-title">What AGENTS.md should do</h2>
+          <p>
+            `AGENTS.md` should act as a concise repo index, not a long policy dump. Put the commands and rules that apply to every change near the top, then link to deeper docs only when agents need more detail.
+          </p>
+          <p>
+            The goal is not to document every implementation detail. The goal is to remove the decisions that cause agents to guess: how to set up the repo, which checks count, which paths are sensitive, and what evidence belongs in a pull request.
+          </p>
+        </section>
+
+        <section aria-labelledby="score-title">
+          <h2 id="score-title">Score the current draft</h2>
+          <p>
+            The free checker scores pasted `AGENTS.md` content locally in the browser. It checks setup, commands, repo map, conventions, safety, review expectations, scope, and maintenance cues, then returns a copyable Markdown fix plan.
+          </p>
+          <a class="button button--primary" href="/#checker">Check an AGENTS.md draft</a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span>No signup. No tracking. MIT source.</span>
+      <a href="/">Checker</a>
+      <a href="/AGENTS.md">AGENTS.md example</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="https://github.com/Turner-Levey/agents-md-repo-readiness-checker">GitHub</a>
+    </footer>
+  </body>
+</html>

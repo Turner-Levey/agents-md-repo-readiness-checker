@@ -9,6 +9,7 @@ Public site: https://agents-md-repo-readiness-checker.vercel.app/
 ## File Map
 
 - `index.html` contains page structure, metadata, JSON-LD, and static links.
+- `is-my-code-repo-ai-ready.html` covers the broader AI-ready repository search intent and links back to the checker.
 - `styles.css` contains all visual styling.
 - `script.js` contains the local-only checker logic and report export behavior.
 - `README.md` describes the public tool and directory status.

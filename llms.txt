@@ -5,6 +5,7 @@ Source: https://github.com/Turner-Levey/agents-md-repo-readiness-checker
 Tiny Tool Town listing: https://www.tinytooltown.com/tools/agents-md-repo-readiness-checker/
 No-Login pending listing: https://nologin.tools/tool/agents-md-repo-readiness-checker-vercel-app/
 No-Login badge status: https://nologin.tools/badge/agents-md-repo-readiness-checker-vercel-app/
+AI-ready repo checklist: https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html
 Dogfooded AGENTS.md example: https://agents-md-repo-readiness-checker.vercel.app/AGENTS.md
 License: MIT
 
@@ -19,6 +20,7 @@ The checker runs locally in the browser. It does not send pasted Markdown anywhe
 ## Useful routes
 
 - Home and checker: https://agents-md-repo-readiness-checker.vercel.app/
+- AI-ready repo checklist: https://agents-md-repo-readiness-checker.vercel.app/is-my-code-repo-ai-ready.html
 - AGENTS.md example: https://agents-md-repo-readiness-checker.vercel.app/AGENTS.md
 - Sitemap: https://agents-md-repo-readiness-checker.vercel.app/sitemap.xml
 - Robots: https://agents-md-repo-readiness-checker.vercel.app/robots.txt
